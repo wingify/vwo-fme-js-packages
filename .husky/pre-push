@@ -1,0 +1,2 @@
+pnpm check:license
+pnpm test
