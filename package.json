@@ -1,0 +1,66 @@
+{
+  "name": "vwo-fme-js-packages",
+  "private": true,
+  "version": "1.0.0",
+  "description": "VWO Feature Management and Experimentation JavaScript packages",
+  "main": "index.js",
+  "scripts": {
+    "add:package": "node tools/scripts/create-new-package.js",
+    "clean": "rimraf dist",
+    "check:license": "node tools/scripts/check-license.js",
+    "build": "pnpm clean && pnpm -r build",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "test:coverage": "pnpm -r test:coverage",
+    "prepare": "husky",
+    "lint": "eslint packages/**/*.ts",
+    "lint:fix": "eslint packages/**/*.ts --fix",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\""
+  },
+  "keywords": [],
+  "author": "VWO Developers",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.11.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 12.10.0",
+    "yarn": ">= 1.22.17"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.28.0",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0",
+    "codecov": "^3.8.3",
+    "eslint": "^9.28.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.4",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "typescript": "^5.4.5",
+      "uuid": "^9.0.1"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "pnpm lint"
+    ],
+    "**/*.{js,ts,tsx,json,md}": "pnpm format"
+  }
+}
