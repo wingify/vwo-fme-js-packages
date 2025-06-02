@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist/unpacked"
+  },
+  "include": ["src/**/*"],
+  "paths": {
+    "*": ["node_modules", "src"]
+  }
+}
