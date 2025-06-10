@@ -6,7 +6,7 @@ module.exports = (argv = {}, packageFile) => {
   const libVersion = packageFile.version;
   let deps = '';
 
-  Object.keys(packageFile.dependencies).map((key, index) => {
+  Object.keys(packageFile.dependencies || {}).map((key, index) => {
     deps += `\n ${index + 1}. ${key} - ${packageFile.dependencies[key]}`;
   });
 

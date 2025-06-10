@@ -1,0 +1,33 @@
+{
+  "name": "@wingify/util-check-license-header",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "VWO Check License header utility for Feature Management and Experimentation",
+  "homepage": "https://github.com/wingify/vwo-fme-js-packages",
+  "main": "dist/index.umd.min.js",
+  "browser": "dist/index.umd.min.js",
+  "type": "commonjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "pnpm build:dev && pnpm build:prod",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "yarn.lock",
+    "LICENSE"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "minimatch": "^10.0.1"
+  }
+}

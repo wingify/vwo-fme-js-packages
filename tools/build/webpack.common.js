@@ -8,10 +8,12 @@ module.exports = ({
   libraryName,
   mode,
   packageFile,
+  target,
 }) => ({
   mode,
   devtool: 'source-map',
   entry: path.resolve(entry),
+  target,
   output: {
     path: path.resolve(outputPath),
     filename: () => {
@@ -52,6 +54,10 @@ module.exports = ({
       '@wingify/util-data-type': path.resolve(
         __dirname,
         '../../packages/util-data-type/src'
+      ),
+      '@wingify/util-check-license-header': path.resolve(
+        __dirname,
+        '../../packages/util-check-license-header/src'
       ),
     },
   },
