@@ -1,8 +1,8 @@
 # VWO Feature Management and Experimentation JavaScript Packages
 
-[![npm version](https://img.shields.io/npm/v/vwo-fme-js-packages?style=for-the-badge&color=grey&logo=npm)](https://www.npmjs.com/package/vwo-fme-js-packages)
-[![License](https://img.shields.io/github/license/wingify/vwo-fme-js-packages?style=for-the-badge&color=blue)](http://www.apache.org/licenses/LICENSE-2.0)
-[![CI](https://img.shields.io/github/actions/workflow/status/wingify/vwo-fme-js-packages/main.yml?style=for-the-badge&logo=github)](https://github.com/wingify/vwo-fme-js-packages/actions?query=workflow%3ACI)
+[![Maintained with PNPM](https://img.shields.io/badge/maintained%20with-pnpm-green?style=for-the-badge)](https://pnpm.io/) [![License](https://img.shields.io/github/license/wingify/vwo-fme-js-packages?style=for-the-badge&color=blue)](http://www.apache.org/licenses/LICENSE-2.0) ![TypeScript: Strict](https://img.shields.io/badge/typescript-strict-yellow?style=for-the-badge) [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-e72163?style=for-the-badge)](https://prettier.io)
+
+[![CI](https://img.shields.io/github/actions/workflow/status/wingify/vwo-fme-js-packages/ci.yml?style=for-the-badge&logo=github)](https://github.com/wingify/vwo-fme-js-packages/actions?query=workflow%3ACI) [![codecov](https://img.shields.io/codecov/c/github/wingify/vwo-fme-js-packages?token=813UYYMWGM&style=for-the-badge&logo=codecov)](https://codecov.io/gh/wingify/vwo-fme-js-packages)
 
 ---
 
@@ -27,8 +27,10 @@ This repository contains JavaScript packages for VWO Feature Management and Expe
 
 Packages in this Monorepo:
 
-- [@wingify/service-logger](./packages/service-logger)
-- [@wingify/util-data-type](./packages/util-data-type)
+| Package Name | Version                                                                                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| util-array   | [![npm](https://img.shields.io/npm/v/@wingify/util-data-type.svg?label=@wingify/util-data-type&style=for-the-badge)](https://www.npmjs.com/package/@wingify/util-data-type) |
+| util-object  | [![npm](https://img.shields.io/npm/v/@wingify/service-logger.svg?label=@wingify/service-logger&style=for-the-badge)](https://www.npmjs.com/package/@wingify/service-logger) |
 
 #### [`@wingify/service-logger`](./packages/service-logger)
 
