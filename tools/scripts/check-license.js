@@ -14,15 +14,22 @@
  * limitations under the License.
  */
 
-const checkLicenseUtil = require('../utils/CheckLicenseUtil');
+const {
+  checkLicenseAndCopyright,
+} = require('@wingify/util-check-license-header');
 
 console.time('Execution time for License and Copyright');
-const isSuccess = checkLicenseUtil.checkLicenseAndCopyright({
+const isSuccess = checkLicenseAndCopyright({
   year: '2025',
   author: 'Wingify Software Pvt. Ltd.',
   paths: 'packages',
   stoppingCriteria: '\\*\\/',
-  excludes: ['coverage', 'dist', 'node_modules', 'config.js'],
+  excludes: [
+    'packages/*/coverage',
+    'packages/*/dist',
+    'packages/*/node_modules',
+    'packages/*/*.config.js',
+  ],
   extensions: ['ts', 'js'],
 });
 console.timeEnd('Execution time for License and Copyright');

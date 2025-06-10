@@ -33,6 +33,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.33.0
         version: 8.33.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
+      '@wingify/util-check-license-header':
+        specifier: ^0.1.0
+        version: 0.1.0
       codecov:
         specifier: ^3.8.3
         version: 3.8.3
@@ -773,6 +776,9 @@ packages:
     peerDependenciesMeta:
       webpack-dev-server:
         optional: true
+
+  '@wingify/util-check-license-header@0.1.0':
+    resolution: {integrity: sha512-QKZJq5kmPllkRekxT59khT4VqgzcLACco/W4TMxPrFILb9wYi6PJeIJzw9L0uhi2i5x2bnrAhQUUptldnFujwQ==}
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -3656,6 +3662,8 @@ snapshots:
     dependencies:
       webpack: 5.99.9(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack-bundle-analyzer@4.10.2)(webpack@5.99.9)
+
+  '@wingify/util-check-license-header@0.1.0': {}
 
   '@xtuc/ieee754@1.2.0': {}
 
